@@ -1,13 +1,18 @@
-import React from 'react'
-import Preloader from './components/Preloader'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import { useEffect } from 'react';
+import Preloader from './components/Preloader';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Preloader />
@@ -15,10 +20,11 @@ function App() {
       <Hero />
       <About />
       <Services />
+      <Projects />
       <Contact />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

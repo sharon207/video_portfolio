@@ -73,7 +73,7 @@ const Services = () => {
 
   return (
     <section 
-      id="services"
+      id="skills"
       ref={containerRef}
       className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]"
     >
@@ -175,8 +175,8 @@ const Services = () => {
           
           <TagCard 
             number="01"
-            title="Define"
-            text="We start by understanding your goals, user requirements, and technical constraints to lay a rock-solid foundation for the project."
+            title="Machine Learning"
+            text="Developing intelligent prediction models using ML algorithms, stacking ensembles, and implementing explainable AI solutions."
             className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
             aosType="fade-left"
             aosDelay="100"
@@ -186,8 +186,8 @@ const Services = () => {
 
           <TagCard 
             number="02"
-            title="Design"
-            text="Creating intuitive, pixel-perfect user interfaces and wireframes that guarantee an engaging and accessible user experience."
+            title="Frontend Development"
+            text="Building responsive, interactive UIs with Vue.js, Next.js, and TailwindCSS. API integration and reusable component architecture."
             className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
             aosType="fade-right"
             aosDelay="200"
@@ -197,8 +197,8 @@ const Services = () => {
 
           <TagCard 
             number="03"
-            title="Build"
-            text="Developing scalable frontend architectures and secure backend systems using the latest modern tech stack."
+            title="Backend Development"
+            text="Building scalable APIs with Node.js, Express.js and Flask. Database design with MongoDB and secure authentication systems."
             className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
             aosType="fade-left"
             aosDelay="300"
@@ -208,8 +208,8 @@ const Services = () => {
 
           <TagCard 
             number="04"
-            title="Launch"
-            text="Rigorous testing, optimization, and seamless deployment to cloud infrastructure, followed by ongoing support."
+            title="NLP & Data Analysis"
+            text="Text processing, sentiment analysis, and intelligent document evaluation. Data visualization using Chart.js and analytics dashboards."
             className="md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
             aosType="fade-right"
             aosDelay="400"
@@ -223,7 +223,7 @@ const Services = () => {
             data-aos-delay="600"
             className="hidden md:block absolute top-[1250px] left-[60%] font-['Caveat',cursive] text-3xl text-gray-600 rotate-6"
           >
-            Ready to be delivered!
+            Ready to collaborate!
           </div>
 
         </div>
