@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // Adjusted import path for the video
-import heroVideo from '../assets/hero video/Developer_introduces_self_and_sk…_202606051918.mp4';
+import heroVideo from '../assets/hero video/sharon-xavier-reel.MOV';
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -32,45 +32,43 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black">
+    <section id="home" className="relative w-full h-screen overflow-hidden bg-[#E60012]">
       {/* Background Video */}
       <video
         ref={videoRef}
         loop
         muted={isMuted}
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full h-full object-contain z-0"
       >
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* Content Container */}
-      <div className="absolute inset-0 z-20 px-6 pb-20 md:pb-[8%] md:px-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-end md:justify-between items-start md:items-end text-left w-full">
+      <div className="absolute inset-0 z-20 px-6 md:px-12 flex flex-col md:flex-row justify-start items-center text-left w-full">
         
         {/* Left Side: Text and Buttons */}
         <div className="flex flex-col items-start text-left max-w-2xl w-full">
-          {/* Main Heading */}
+          {/* Professional Summary */}
           <h1 
             data-aos="fade-up"
             className="text-white text-3xl md:text-5xl font-bold mb-4 tracking-tight"
           >
             Hi, I’m a <br /> <span className="text-transparent [-webkit-text-stroke:1.5px_black]">Full Stack Developer</span>
           </h1>
-
-          {/* Subheading */}
-          <p 
+          <p
             data-aos="fade-up"
             data-aos-delay="200"
             className="text-white text-sm md:text-lg font-semibold mb-8 max-w-md drop-shadow-md"
           >
-            I build fast, scalable and modern web applications using React, Node.js and Tailwind CSS.
+            CS professional passionate about Artificial Intelligence, Machine Learning and modern web development. Experienced in building AI-powered applications using Python, Vue.js, Node.js and Machine Learning models. Interested in developing scalable intelligent solutions and modern web platforms.
           </p>
 
           {/* Buttons */}
           <div 
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="200"
             className="flex flex-row flex-wrap items-center gap-3 w-full"
           >
             {/* Primary Button */}

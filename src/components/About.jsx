@@ -6,7 +6,7 @@ import mongoImage from '../assets/about/mongodb.png';
 
 const About = () => {
   return (
-    <section className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id="about" className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-start">
         
         {/* Left Side: ID Badge and Skills */}
@@ -42,29 +42,21 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">Hello!</h2>
           <p className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50">
-            Hi, my name is <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Leeshark</span>, a passionate full-stack developer based in [Location], dedicated to crafting clean, functional, and highly scalable web applications.
+            Hi, I'm <span className="text-black text-xl font-black mx-1 tracking-wide uppercase">Sharon Xavier</span>, an AI/ML Developer based in <span className="text-black text-xl font-black mx-1 tracking-wide">Kerala, Alappuzha</span>. Passionate about Machine Learning, NLP, and modern web development. Experienced in building AI-powered applications with Python, Vue.js, Node.js, and advanced ML models.
           </p>
 
-          {/* Horizontal Skills Row (Transparent & Large) */}
-          <div className="flex items-center gap-10 mt-8">
-            <img 
-              data-aos="zoom-in" data-aos-delay="300"
-              src={reactImage} 
-              alt="React" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
-            <img 
-              data-aos="zoom-in" data-aos-delay="450"
-              src={nodeImage} 
-              alt="Node.js" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
-            <img 
-              data-aos="zoom-in" data-aos-delay="600"
-              src={mongoImage} 
-              alt="MongoDB" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl" 
-            />
+          {/* Tech Stack Badges */}
+          <div className="mt-12 flex flex-wrap gap-3">
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Python</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">C++</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">JavaScript</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">React</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Vue.js</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Next.js</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Node.js</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">Flask</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">MongoDB</span>
+            <span className="bg-black/20 text-white px-4 py-2 rounded-full text-sm font-bold backdrop-blur-sm">TailwindCSS</span>
           </div>
 
         </div>
